@@ -1,0 +1,102 @@
+:root {
+  --blue: #0d1b2a;
+  --gold: #c5a253;
+  --beige: #f5f2eb;
+  --rose: #f9f0ea;
+  --text: #2a2a2a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--beige);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px 100px;
+  background: linear-gradient(135deg, var(--blue), #1b263b);
+  color: white;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at center, rgba(197,162,83,0.3) 0%, transparent 70%);
+}
+
+.main-title {
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  font-weight: 900;
+  margin: 0;
+  color: white;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.main-title span {
+  color: var(--gold);
+}
+
+.subtitle {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 15px;
+  color: #ddd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.students {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.student {
+  background: white;
+  border-left: 6px solid var(--gold);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.student h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: var(--blue);
+  margin-top: 0;
+}
+
+.student p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--blue);
+  color: var(--gold);
+  font-size: 15px;
+  margin-top: 60px;
+  font-family: 'Playfair Display', serif;
+}
